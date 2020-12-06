@@ -43,9 +43,7 @@ class Printer {
         }
         sheetsStock -= file.sheetsNumber
         tonerStock -= file.tonerSpending
-        let newFile = file
-        printQueue[name] = newFile
-        return newFile.document
+        return file.document
     }
         
 }
